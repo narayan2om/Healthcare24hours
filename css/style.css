@@ -1,0 +1,1173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    /* outline: 1px solid red;*/
+}
+
+:root {
+    --navbg: #fff;
+    --body: #fff;
+    --btn: #1977cc;
+    --logocolor: #2c4964;
+    --border: #1977cc;
+    --menubtn: #46535d;
+    --h1: #2c4964;
+    --h3: #2c4964;
+    --p: #848484;
+    --icon: #1977cc;
+    --h4: #2c4964;
+    --result_section: #f1f7fd;
+    --hr: #1977cc;
+    --card_hover: #1977cc;
+    --icon_bg: #1977cc;
+    --icon_Bg_shadow: #badaf7;
+    --p: #848484;
+    --Appointment: #f1f7fd;
+    --fromborder: #848484;
+    --hover_bg: #2c4964;
+    --Department: #f1f7fd;
+    --hovercolor: #1977cc;
+    --docoter_section: #fff;
+    --social-media-ican: #a0bcd5;
+    --color: #fff;
+    --Frequently-section-bg: #f1f7fd;
+    --a_color: #848484;
+    --slider_bg: #fff;
+    --card_bg: #fff;
+    --gallerybg:#fff;
+    --contect_bg:#fff;
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: revert;
+    color: var(--h1);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--h3);
+}
+
+p {
+    color: #848484;
+}
+
+hr {
+    height: 3px;
+    width: 126px;
+    margin: 0 auto;
+    background-color: var(--hr);
+    margin-bottom: 20px;
+    /* padding-bottom: 20px; */
+}
+
+body {
+    background-color: var(--body);
+}
+
+.icon {
+    color: var(--icon);
+
+}
+
+.contener {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+header {
+    background-color: var(--navbg);
+    width: 100%;
+    height: auto;
+}
+
+.header-area {
+    padding: 0;
+}
+
+nav {
+    background-color: var(--navbg);
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    line-height: 50px;
+    color: var(--menubtn);
+}
+
+.logo {
+    font-size: 32px;
+    line-height: 80px;
+    font-weight: bold;
+    color: var(--logocolor);
+}
+
+.Appointmentbtn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: var(--border);
+    color: #fff;
+}
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: rgb(39, 38, 38);
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+/* main contener */
+.bg_banner {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.bg_banner_text {
+    line-height: 60px;
+    padding-top: 180px;
+}
+
+button {
+    padding: 0px 36px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--btn);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* card start */
+
+.rowcard {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    /* margin: 0 auto; */
+}
+
+.largcard {
+    width: 400px;
+    padding: 30px;
+    background: #1977cc;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.bluecard h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.bluecard p {
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.bluecard a {
+    margin-left: 25%;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardgroup {
+    display: flex;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 2%;
+    margin-top: 8%;
+    width: 261px;
+    height: 295px;
+    border-radius: 10px;
+    background-color: var(--body);
+    box-shadow: 2px 5px lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+
+.ican {
+    color: red;
+    position: absolute;
+}
+
+.card h4 {
+
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.card p {
+    padding: 20px;
+    font-size: 16px;
+    color: var(--p);
+}
+
+/* section start */
+
+.main_section {
+    background-color: var(--body);
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+
+
+}
+
+.vidoe_container {
+    background-image: url(../img/about.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about_describtion {
+    width: 100%;
+    background-color: var(--body);
+    padding: 48px;
+}
+
+.about_describtion h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2c4964;
+    margin-bottom: 15px;
+}
+
+.about_describtion p {
+    font-size: 15px;
+    color: var(--p);
+    margin-bottom: 2rem;
+}
+
+.icon_box {
+    margin-top: 54px;
+}
+
+.icons_box {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #8dc2f1;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.icons_box:hover {
+    background-color: var(--icon);
+}
+
+.title {
+    margin-left: 85px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--h4);
+}
+
+.description {
+    margin-left: 85px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/* section end */
+
+/* result section */
+.result_section {
+    width: 100%;
+    height: 215px;
+    background-color: var(--result_section);
+}
+
+.card_count {
+    width: 300px;
+    height: 130px;
+    margin: 0px 10px;
+    background-color: var(--body);
+}
+
+.result_section .contener {
+    display: flex;
+}
+
+.doctors_work {
+    text-align: center;
+}
+
+.dr_icon .fa {
+    padding: 11px;
+    background: var(--icon);
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+.doctors_work h3 {
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+.doctors_work p {
+    padding-top: 10px;
+}
+
+/* service start */
+
+.service {
+    width: 100%;
+    height: auto;
+    background-color: var(--body);
+}
+
+.service_title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.service_title h3 {
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #2c4964;
+}
+
+.larg_card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_part {
+    margin: 10px;
+    width: 380px;
+    height: 338px;
+    border: 1px solid gray;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card_part .fa {
+    color: #fff;
+    padding: 9px;
+    background-color: var(--icon_bg);
+    font-size: 51px;
+    margin-top: 40px;
+    border-radius: 6px;
+    box-shadow: -7px -7px var(--icon_Bg_shadow);
+    margin-bottom: 20px;
+}
+
+.card_part h3 {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.card_part p {
+    color: var(--p);
+}
+
+.card_part:hover {
+    background-color: var(--card_hover);
+    transition: 0.5s;
+}
+
+.card_part:hover .fa {
+    background-color: #fff;
+    color: var(--icon);
+}
+
+.card_part:hover h3 {
+    color: #fff;
+}
+
+.card_part:hover p {
+    color: #fff;
+}
+
+
+/* Appointment */
+
+
+.Appointment {
+    width: 100%;
+    height: auto;
+    background-color: var(--Appointment);
+}
+
+.register {
+    padding: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.register:hover {
+    border: 1px solid var(--fromborder);
+    background-color: var(--hover_bg);
+    color: #fff;
+}
+
+.texarea {
+    width: 97%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.texarea:hover {
+    border: 1px solid var(--fromborder);
+    background-color: var(--hover_bg);
+    color: #fff;
+}
+
+/* Departmen section */
+
+
+.Department {
+    /* margin-top: 50px; */
+    width: 100%;
+    background-color: var(--Department);
+}
+
+.department_group {
+    height: 300px;
+    display: flex;
+}
+
+.D_group1 {
+    width: 300px;
+}
+
+.D_group1 ul li {
+    list-style: none;
+}
+
+.D_group1 ul li a {
+    text-decoration: none;
+    border: 0;
+    padding: 10px 22px 10px 22px;
+    transition: 0.3s;
+    color: #2c4964;
+    border-radius: 0;
+    border-right: 2px solid #ebf1f6;
+    /* font-weight: 600; */
+    font-size: 22px;
+}
+
+.D_group1 ul li a:hover {
+    border-right: 2px solid var(--border);
+    background-color: var(--hover_bg);
+    color: #fff;
+}
+
+.dgroup_part1 h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.cardiology_group {
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.dgroup_part1 p {
+    font-size: 18px;
+}
+
+.D_group1 ul li {
+    margin-bottom: 32px;
+
+}
+
+.D_group2 {
+    display: flex;
+
+}
+
+.dgroup_part2 img {
+    width: 300px;
+    height: auto;
+}
+
+/* docoter section */
+
+.docoter {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: auto;
+    background-color: var(--docoter_section);
+}
+
+.docoter_group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+}
+
+.dr_card_group {
+
+    width: 588px;
+    height: 219px;
+    margin: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s;
+    box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
+}
+
+.dr_card_group:hover {
+    background-color: var(--card_hover);
+}
+
+.dr_card_group:hover h4 {
+    color: var(--color);
+}
+
+.dr_card_group:hover p {
+    color: var(--color);
+}
+
+.dr_card_group:hover span {
+    color: var(--color);
+}
+
+.dr_card_group {
+    display: flex;
+}
+
+.docoter_img img {
+    width: 174px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.docoter_titel hr {
+    color: var(--social-media-ican);
+    margin: 0;
+    margin-top: 6px;
+}
+
+.dr_card_group {
+    padding: 22px;
+}
+
+.docoter_titel {
+    padding: 10px;
+}
+
+.sosaile_media .fa {
+    font-size: 16px;
+    padding: 12px;
+    background-color: var(--social-media-ican);
+    color: var(--color);
+    width: 38px;
+    height: auto;
+    border-radius: 50%
+}
+
+/* Frequently Asked Questions section */
+
+.Frequently {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: auto;
+    background-color: var(--Frequently-section-bg);
+}
+
+.frquently_part ul li {
+    list-style: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.frquently_part ul li a {
+    text-decoration: none;
+    color: var(--a_color);
+}
+
+.frquently_part ul li a:hover {
+    color: var(--hovercolor);
+}
+
+/* slider section */
+
+.slider {
+    width: 100%;
+    height: auto;
+    background-color: var(--slider_bg);
+}
+
+.carousel_part {
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px var(--icon_Bg_shadow);
+}
+
+.card_box {
+    display: flex;
+    background-color: var(--card_bg);
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 17px var(--icon_Bg_shadow);
+}
+
+.slider_img img {
+    width: 200px;
+    height: auto;
+    padding: 15px;
+    border-radius: 35px;
+}
+
+.slider_title {
+    padding-top: 25px;
+}
+
+.card_box:hover {
+    background-color: var(--card_hover);
+}
+
+.card_box:hover h4 {
+    color: var(--color);
+}
+
+.card_box:hover h3 {
+    color: var(--color);
+}
+
+.card_box:hover p {
+    color: var(--color);
+}
+
+/* gallery_section */
+
+.gallery_section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: var(--gallerybg);
+}
+
+.gallery_img img{
+    width: 372px;
+    height: 287px;
+    padding: 5px;
+    cursor: pointer;
+}
+.gallery_img{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 1s;
+}
+.img_box{
+    overflow: hidden;
+}
+.img_box img:hover {
+  
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+/* contect section */
+
+
+.contect_section{
+    width: 100%;
+    height: auto;
+    background-color: var(--contect_bg);
+}
+
+@media (max-width:1200px) {}
+
+@media (max-width:990px) {
+    #checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 51vh;
+        background-color: var(--border);
+        height: auto;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: .5s;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .Appointmentbtn {
+        display: none;
+    }
+
+    .bg_banner {
+        width: 900;
+    }
+
+    /* main contener */
+
+    .contener {
+        width: 700px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .bg_banner_text {
+        line-height: 44px;
+        padding-top: 80px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: revert;
+        color: var(--h1);
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: lighter;
+        color: var(--h3);
+    }
+
+    button {
+        padding: 0px 15px;
+    }
+
+    /* card section */
+    .rowcard {
+        flex-flow: column;
+        width: auto;
+        /* position: absolute; */
+        top: 483px;
+
+    }
+
+    .largcard {
+        width: 700px;
+        height: 395px;
+    }
+
+    .bluecard h3 {
+
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .bluecard p {
+        font-size: 17px;
+        letter-spacing: 0px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    .bluecard a {
+        margin-left: 245px;
+        padding: 10px 20px;
+    }
+
+    .cardgroup {
+        flex-flow: column;
+        margin: 0%;
+    }
+
+    .card {
+        margin: 0%;
+        margin-top: 8%;
+        width: 700px;
+        height: 232px;
+    }
+
+    /* main_section */
+
+    .main_section {
+        flex-flow: column;
+        height: auto;
+    }
+
+    .vidoe_container {
+        background-image: url(../img/about.jpg);
+        width: 100%;
+        height: 550px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* service */
+    .card_part {
+        margin: 10px;
+        width: 328px;
+    }
+
+    /* Appoinment */
+    .register {
+        width: 216px;
+    }
+
+    /* Department section */
+
+    .department_group {
+        height: auto;
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }
+
+    .D_group1 {
+        width: 100%;
+    }
+
+    .D_group1 ul li:hover {
+        padding: 10px 0px;
+        background-color: var(--hovercolor);
+    }
+
+    .D_group1 ul li a:hover {
+        color: #fff;
+    }
+
+    .D_group2 {
+        flex-wrap: wrap-reverse;
+    }
+
+    .dgroup_part2 img {
+        margin-left: 25%;
+        width: 450px;
+        height: auto;
+    }
+
+
+    
+/* gallery_section */
+
+
+
+
+.gallery_img img{
+    width: 231px;
+    height: 222px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width:769px) {
+
+    .contener {
+        width: 520px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .bg_banner_text {
+        line-height: 44px;
+        padding-top: 80px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: revert;
+        color: var(--h1);
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: lighter;
+        color: var(--h3);
+    }
+
+    button {
+        padding: 0px 15px;
+    }
+
+    /* Card Works */
+    .largcard {
+        width: 516px;
+    }
+
+    .bluecard a {
+        margin-left: 142px;
+        padding: 8px 15px
+    }
+
+    .card {
+
+        width: 516px;
+        height: 232px;
+    }
+
+    /* service */
+
+    .service_title {
+        padding: 10px;
+    }
+
+    .card_part {
+        margin: 10px;
+        width: 240px;
+        height: 280px;
+        padding: 10px;
+    }
+
+    /* Appoinment */
+    .register {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .texarea {
+        width: 100%;
+    }
+
+    /* Department section */
+    .dgroup_part2 img {
+        margin-left: 7%;
+        width: 450px;
+        height: auto;
+    }
+
+    /* Docoter Service */
+
+    .docoter_group {
+        flex-wrap: wrap;
+    }
+
+    .dr_card_group {
+        width: 100%;
+
+    }
+
+    /* slider section */
+
+    .slider {
+        width: 100%;
+    }
+
+    .carousel_part {
+        width: 486px;
+        height: 208px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 3px var(--icon_Bg_shadow);
+    }
+
+    .card_box {
+        padding: 0px;
+        width: 486px;
+        height: 208px;
+    }
+
+    .slider_img img {
+        width: 142px;
+        height: auto;
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    .slider_title {
+        padding: 5px;
+    }
+
+    .card_box h4{
+        font-size: 18px;
+        margin: 1px;
+    }
+    .card_box h3{
+        font-size: 14px;
+         margin: 1px;
+    }
+
+    .card_box p{
+        font-size: 11px;
+    }
+    /* gallery_section */
+   .img_box{
+       margin: 0 auto;
+   }
+.gallery_img img{
+    width: 499px;
+    height: auto;
+}
+}
+
+@media(max-width:480px) {
+
+
+    .main_section {
+        width: 520px;
+    }
+
+    .contener {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    /* result_section */
+    .result_section {
+        width: 520px;
+    }
+
+    /* service */
+    .service {
+        width: 517px;
+    }
+
+    .service_title {
+        padding: 10px;
+    }
+
+    .card_part {
+        width: 504px;
+    }
+
+    /* Appoinment section*/
+    .Appointment {
+        width: 517px;
+    }
+
+    .register {
+        width: 97%;
+        margin-top: 10px;
+    }
+
+    .texarea {
+        width: 97%;
+    }
+
+    /* department section */
+    .Department {
+        width: 520px;
+    }
+
+    .dgroup_part2 img {
+        margin-left: 7%;
+        width: 450px;
+        height: auto;
+    }
+
+    .dgroup_part1 h3:hover {
+        color: var(--hovercolor);
+    }
+
+    /* docoter Section */
+    .docoter {
+        width: 520px;
+    }
+
+
+   /* Frequently section */
+
+    .Frequently {
+      
+        width: 520px;
+    }
+
+
+     /* slider section */
+
+    .slider {
+        width: 520px;
+    }
+
+    .carousel_part {
+        width: 347px;
+        height: 170px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 3px var(--icon_Bg_shadow);
+    }
+
+    .card_box {
+        width: 347px;
+        height: 170px;
+    }
+
+    .slider_img img {
+        width: 110px;
+        height: auto;
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    .slider_title {
+        padding: 5px;
+    }
+
+    .card_box h4{
+        font-size: 18px;
+        margin: 1px;
+    }
+    .card_box h3{
+        font-size: 14px;
+         margin: 1px;
+    }
+
+    .card_box p{
+        font-size: 11px;
+    }
+
+
+    .gallery_section{
+        width: 512px;
+    }
+}
